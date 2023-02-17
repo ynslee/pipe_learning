@@ -23,7 +23,11 @@ int	main(int argc, char	*argv[])
 		/*with dup2, you also get the similar action as 'dup', but it takes
 		two parameters. first one is the one that we want to copy and second one
 		is the value that we want to give as file descriptor, for example 1(STDOUT)
-		But it is better to use it as STDOUD_FILENO because it is c standard.*/
+		But it is better to use it as STDOUD_FILENO because it is c standard.*/.0
+
+
+
+		
 		close(file);
 		int	err = execlp("ping", "ping", "-c", "3", "google.com", NULL); //try with google.con
 		if (err == -1){
